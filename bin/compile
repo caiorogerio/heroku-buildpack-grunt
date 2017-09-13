@@ -224,7 +224,7 @@ warn_old_npm_lockfile $NPM_LOCK
 
 
 ### Stating to setup NGINX
-status "Stating to setup NGINX"
+header "Setting up nginx"
 
 set -e            # fail fast
 set -o pipefail   # don't ignore exit codes when piping output
