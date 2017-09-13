@@ -4,7 +4,7 @@
 cat << EOF
 default_process_types:
   web:
-    npm install
-    grunt build
+    npm install --dev
+    node -e "require('grunt').cli('build');"
     sh boot.sh
 EOF
