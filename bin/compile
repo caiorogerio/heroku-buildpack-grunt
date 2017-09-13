@@ -283,3 +283,11 @@ if test -f $build_dir/hooks/after_hook.sh; then
 fi
 
 status "Compile of nginx application finished"
+
+# Deploy static SPA
+header "Deploying SPA"
+
+npm install --dev
+npm install -g grunt-cli bower
+bower install
+grunt build
