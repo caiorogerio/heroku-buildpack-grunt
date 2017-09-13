@@ -5,4 +5,8 @@ cat << EOF
 addons: []
 default_process_types:
   web: npm start
+cat <<EOF
+---
+default_process_types:
+  web: sh boot.sh
 EOF
